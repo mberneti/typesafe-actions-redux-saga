@@ -1,7 +1,7 @@
-import { Todo } from 'MyModels';
+import { Todo } from "MyModels";
 
 let todos: Todo[] = [
-  { id: '0', title: `Yo, your snapshot has been loaded successfully!` },
+  { id: "0", title: `Yo, your snapshot has been loaded successfully!` },
 ];
 
 export function loadSnapshot(): Promise<Todo[]> {
@@ -12,7 +12,7 @@ export function loadSnapshot(): Promise<Todo[]> {
   });
 }
 
-export function saveSnapshot(data: Todo[]): Promise<undefined> {
+export function saveSnapshot(data: Todo[]): Promise<void> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       todos = data;
