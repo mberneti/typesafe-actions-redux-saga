@@ -1,0 +1,9 @@
+{
+  "extends": ["./node_modules/react-redux-typescript-scripts/tslint.json"],
+  "linterOptions": {
+    "exclude": ["./src/typesafe-actions/**/*"]
+  },
+  "rules":{
+    "quotemark":false 
+  }
+}
