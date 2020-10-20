@@ -3,7 +3,8 @@
   "linterOptions": {
     "exclude": ["./src/typesafe-actions/**/*"]
   },
-  "rules":{
-    "quotemark":false 
+  "rules": {
+    "quotemark": false,
+    "no-submodule-imports": [true, "redux-saga"]
   }
 }
